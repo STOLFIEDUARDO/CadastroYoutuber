@@ -56,6 +56,10 @@ using System.Threading.Tasks;
     {
         return Nome;
     }
+
+
+
+
     public void SetSobrenome(string sobrenome)
     {
         if (sobrenome.Trim().Count() < 2)
@@ -72,6 +76,9 @@ using System.Threading.Tasks;
     {
         return Sobrenome;
     }
+
+
+
 
 
     public void SetApelido(string apelido)
@@ -91,6 +98,10 @@ using System.Threading.Tasks;
         return Apelido;
     }
 
+
+
+
+
     public void SetNomeCanal(string nomeCANAL)
     {
         if (nomeCANAL.Trim().Count() < 2)
@@ -107,6 +118,11 @@ using System.Threading.Tasks;
     {
         return NomeCanal;
     }
+
+
+
+
+
     public void SetQuantidaDeLikes(long quantidadeLikes)
     {
         if (quantidadeLikes < 0)
@@ -124,5 +140,163 @@ using System.Threading.Tasks;
         return QuantidaDeLikes;
     }
 
-   
+
+
+
+    public void SetQuantidadeInscritos(int quantidaDeInscritos)
+    {
+        if (quantidaDeInscritos < 0)
+        {
+            throw new Exception("Quantidade de inscritos deve ser igual a 0 ou maior");
+        }
+        if (quantidaDeInscritos.ToString() == "")
+        {
+            throw new Exception("Quantidade de inscritos deve ser igual a 0 ou maior");
+        }
+        if (quantidaDeInscritos > int.MaxValue)
+        {
+            throw new Exception("Quantidade de likes deve ser menor que " + int.MaxValue);
+        }
+        QuantidaDeInscritos = quantidaDeInscritos;
+    }
+    public int GetQuantidadeInscritos()
+    {
+        return QuantidaDeInscritos;
+    }
+
+
+
+    public void SetQuantidadeVisualizacoes(long quantidadeVisualizacoes)
+    {
+        if (quantidadeVisualizacoes < 0)
+        {
+            throw new Exception("Quantidade de vizualizações deve ser igual a 0 ou maior");
+        }
+        if (quantidadeVisualizacoes > long.MaxValue)
+        {
+            throw new Exception("Quantidade de vizualizações deve ser menor que " + long.MaxValue);
+        }
+        QuantidaDeVizualicao = quantidadeVisualizacoes;
+    }
+    public long GetQuantidadeVisualizacoes()
+    {
+        return QuantidaDeVizualicao;
+    }
+
+
+
+    public void SetQuantidadeVideos(int quantidadeVideos)
+    {
+        if (quantidadeVideos < 0)
+        {
+            throw new Exception("Quantidade de videos deve ser igual a 0 ou maior");
+        }
+        if (quantidadeVideos < 0)
+        {
+            throw new Exception("Quantidade de videos deve ser menor que " + int.MaxValue);
+        }
+        QuantidaDeVideos = quantidadeVideos;
+    }
+    public int GetQuantidadeVideos()
+    {
+        return QuantidaDeVideos;
+    }
+
+
+
+    public void SetNacionalidade(string nacionalidade)
+    {
+        Nacionalidade = nacionalidade;
+    }
+    public string GetNacionalidade()
+    {
+        return Nacionalidade;
+    }
+
+
+
+       public void SetDescricao(string descricao)
+    {
+        Descricao = descricao;
+    }
+       public string GetDescricao()
+       {
+           return Descricao;
+       }
+
+
+
+       public void SetLinkDoCanal(string linkDoCanal)
+       {
+           LinkDoCanal = linkDoCanal;
+       }
+       public string GetLinkDoCanal()
+       {
+           return LinkDoCanal;
+       }
+
+
+
+
+       public void SetCategoria(string categoria)
+       {
+           Categoria = categoria;
+       }
+       public string GetCategoria()
+       {
+           return Categoria;
+       }
+
+
+
+
+       public void SetPlataforma(string plataforma)
+       {
+           Plataforma = plataforma;
+       }
+       public string GetCategoria()
+       {
+           return Plataforma;
+       }
+
+
+
+
+       public void SetRenda(double renda)
+       {
+           if (renda < 0)
+           {
+               throw new Exception("Renda deve ser igual a 0 ou maior");
+           }
+           Renda = renda;
+       }
+       public double GetRenda()
+       {
+           return Renda;
+       }
+
+       public void SetQuantosStrikes(int quantosStrikes)
+       {
+           if (quantosStrikes < 0)
+           {
+               throw new Exception("Quantidade de strikes deve ser igual a 0 ou maior");
+           }
+           if (quantosStrikes > 3)
+           {
+               throw new Exception("Quantidade de strikes deve ser menor ou igual a 3");
+           }
+           QuantosStrikes = quantosStrikes;
+       }
+       public int GetQuantosStrikes()
+       {
+           return QuantosStrikes;
+       }
+
+
+
+
+
+
+
+
 }

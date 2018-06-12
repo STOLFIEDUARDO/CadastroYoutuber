@@ -280,18 +280,23 @@ using System.Threading.Tasks;
            if (quantosStrikes < 0)
            {
                throw new Exception("Quantidade de strikes deve ser igual a 0 ou maior");
+
            }
            if (quantosStrikes > 3)
            {
                throw new Exception("Quantidade de strikes deve ser menor ou igual a 3");
            }
            QuantosStrikes = quantosStrikes;
+
        }
        public int GetQuantosStrikes()
        {
            return QuantosStrikes;
        }
 
+
+
+       
 
 
 

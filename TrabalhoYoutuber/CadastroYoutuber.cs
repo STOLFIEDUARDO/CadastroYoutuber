@@ -12,6 +12,9 @@ namespace TrabalhoYoutuber
 {
     public partial class CadastroYoutuber : Form
     {
+        private int linhaSelecionada;
+        public int posicao = -1;
+
         public CadastroYoutuber()
         {
             InitializeComponent();

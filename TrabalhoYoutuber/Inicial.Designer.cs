@@ -30,16 +30,13 @@
         {
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.btnNovo = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.txtBuscar = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.CodigoColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NomeDoCanalColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnApagar = new System.Windows.Forms.Button();
+            this.btnEditar = new System.Windows.Forms.Button();
             this.NomeDaPessoaColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.IdadeColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.StrikesColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.VisualizacoesColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.InscritosColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ApelidoColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -49,15 +46,15 @@
             this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.CodigoColumn,
-            this.NomeDoCanalColumn,
             this.NomeDaPessoaColumn,
-            this.IdadeColumn,
-            this.VisualizacoesColumn});
-            this.dataGridView1.Location = new System.Drawing.Point(100, 132);
+            this.StrikesColumn,
+            this.VisualizacoesColumn,
+            this.InscritosColumn,
+            this.ApelidoColumn});
+            this.dataGridView1.Location = new System.Drawing.Point(58, 132);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(544, 394);
+            this.dataGridView1.Size = new System.Drawing.Size(640, 394);
             this.dataGridView1.TabIndex = 0;
             // 
             // btnNovo
@@ -69,66 +66,29 @@
             this.btnNovo.TabIndex = 4;
             this.btnNovo.Text = "Novo";
             this.btnNovo.UseVisualStyleBackColor = true;
+            this.btnNovo.Click += new System.EventHandler(this.btnNovo_Click);
             // 
-            // button2
+            // btnApagar
             // 
-            this.button2.Font = new System.Drawing.Font("News706 BT", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(235, 71);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(128, 55);
-            this.button2.TabIndex = 5;
-            this.button2.Text = "Apagar";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnApagar.Font = new System.Drawing.Font("News706 BT", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnApagar.Location = new System.Drawing.Point(235, 71);
+            this.btnApagar.Name = "btnApagar";
+            this.btnApagar.Size = new System.Drawing.Size(128, 55);
+            this.btnApagar.TabIndex = 5;
+            this.btnApagar.Text = "Apagar";
+            this.btnApagar.UseVisualStyleBackColor = true;
+            this.btnApagar.Click += new System.EventHandler(this.btnApagar_Click);
             // 
-            // button3
+            // btnEditar
             // 
-            this.button3.Font = new System.Drawing.Font("News706 BT", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(405, 71);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(128, 55);
-            this.button3.TabIndex = 6;
-            this.button3.Text = "Editar";
-            this.button3.UseVisualStyleBackColor = true;
-            // 
-            // txtBuscar
-            // 
-            this.txtBuscar.Font = new System.Drawing.Font("News706 BT", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBuscar.Location = new System.Drawing.Point(115, 15);
-            this.txtBuscar.Name = "txtBuscar";
-            this.txtBuscar.Size = new System.Drawing.Size(246, 30);
-            this.txtBuscar.TabIndex = 8;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("News706 BT", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(27, 15);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(82, 22);
-            this.label1.TabIndex = 7;
-            this.label1.Text = "Buscar:";
-            // 
-            // button1
-            // 
-            this.button1.Font = new System.Drawing.Font("News706 BT", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(570, 71);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(128, 55);
-            this.button1.TabIndex = 9;
-            this.button1.Text = "Vizualizar";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // CodigoColumn
-            // 
-            this.CodigoColumn.HeaderText = "Codigo";
-            this.CodigoColumn.Name = "CodigoColumn";
-            this.CodigoColumn.ReadOnly = true;
-            // 
-            // NomeDoCanalColumn
-            // 
-            this.NomeDoCanalColumn.HeaderText = "NomeDoCanal";
-            this.NomeDoCanalColumn.Name = "NomeDoCanalColumn";
-            this.NomeDoCanalColumn.ReadOnly = true;
+            this.btnEditar.Font = new System.Drawing.Font("News706 BT", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEditar.Location = new System.Drawing.Point(405, 71);
+            this.btnEditar.Name = "btnEditar";
+            this.btnEditar.Size = new System.Drawing.Size(128, 55);
+            this.btnEditar.TabIndex = 6;
+            this.btnEditar.Text = "Editar";
+            this.btnEditar.UseVisualStyleBackColor = true;
+            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
             // 
             // NomeDaPessoaColumn
             // 
@@ -136,11 +96,11 @@
             this.NomeDaPessoaColumn.Name = "NomeDaPessoaColumn";
             this.NomeDaPessoaColumn.ReadOnly = true;
             // 
-            // IdadeColumn
+            // StrikesColumn
             // 
-            this.IdadeColumn.HeaderText = "Idade";
-            this.IdadeColumn.Name = "IdadeColumn";
-            this.IdadeColumn.ReadOnly = true;
+            this.StrikesColumn.HeaderText = "Strikes";
+            this.StrikesColumn.Name = "StrikesColumn";
+            this.StrikesColumn.ReadOnly = true;
             // 
             // VisualizacoesColumn
             // 
@@ -148,23 +108,32 @@
             this.VisualizacoesColumn.Name = "VisualizacoesColumn";
             this.VisualizacoesColumn.ReadOnly = true;
             // 
+            // InscritosColumn
+            // 
+            this.InscritosColumn.HeaderText = "Inscritos";
+            this.InscritosColumn.Name = "InscritosColumn";
+            this.InscritosColumn.ReadOnly = true;
+            // 
+            // ApelidoColumn
+            // 
+            this.ApelidoColumn.HeaderText = "Apelido";
+            this.ApelidoColumn.Name = "ApelidoColumn";
+            this.ApelidoColumn.ReadOnly = true;
+            // 
             // Inicial
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(785, 538);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.txtBuscar);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.btnEditar);
+            this.Controls.Add(this.btnApagar);
             this.Controls.Add(this.btnNovo);
             this.Controls.Add(this.dataGridView1);
             this.Name = "Inicial";
             this.Text = "Inicial";
+            this.Activated += new System.EventHandler(this.Inicial_Activated);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -172,15 +141,12 @@
 
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button btnNovo;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.TextBox txtBuscar;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn CodigoColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn NomeDoCanalColumn;
+        private System.Windows.Forms.Button btnApagar;
+        private System.Windows.Forms.Button btnEditar;
         private System.Windows.Forms.DataGridViewTextBoxColumn NomeDaPessoaColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn IdadeColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn StrikesColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn VisualizacoesColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn InscritosColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ApelidoColumn;
     }
 }

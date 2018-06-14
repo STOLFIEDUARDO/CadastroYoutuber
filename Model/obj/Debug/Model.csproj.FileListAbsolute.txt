@@ -1,0 +1,5 @@
+C:\Users\104957\Documents\GitHub\CadastroYoutuber\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
+C:\Users\104957\Documents\GitHub\CadastroYoutuber\Model\bin\Debug\Model.dll
+C:\Users\104957\Documents\GitHub\CadastroYoutuber\Model\bin\Debug\Model.pdb
+C:\Users\104957\Documents\GitHub\CadastroYoutuber\Model\obj\Debug\Model.dll
+C:\Users\104957\Documents\GitHub\CadastroYoutuber\Model\obj\Debug\Model.pdb

@@ -50,6 +50,7 @@
     <Compile Include="CadastroYoutuber.Designer.cs">
       <DependentUpon>CadastroYoutuber.cs</DependentUpon>
     </Compile>
+    <Compile Include="CadastroYoutuberRepository.cs" />
     <Compile Include="Inicial.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -85,6 +86,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{814a1895-261b-4b1b-9fd5-48db59b2a09e}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

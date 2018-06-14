@@ -58,7 +58,7 @@
             this.txtLikes = new System.Windows.Forms.TextBox();
             this.nudStrikes = new System.Windows.Forms.NumericUpDown();
             this.label16 = new System.Windows.Forms.Label();
-            this.txtVizualização = new System.Windows.Forms.TextBox();
+            this.txtVizualizacao = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.txtInscritos = new System.Windows.Forms.TextBox();
             this.cbPlataforma = new System.Windows.Forms.ComboBox();
@@ -372,14 +372,14 @@
             this.label16.TabIndex = 73;
             this.label16.Text = "Quantidade de Visualizações:";
             // 
-            // txtVizualização
+            // txtVizualizacao
             // 
-            this.txtVizualização.Font = new System.Drawing.Font("News706 BT", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtVizualização.Location = new System.Drawing.Point(826, 104);
-            this.txtVizualização.Name = "txtVizualização";
-            this.txtVizualização.Size = new System.Drawing.Size(109, 30);
-            this.txtVizualização.TabIndex = 67;
-            this.txtVizualização.TextChanged += new System.EventHandler(this.txtVizualização_TextChanged);
+            this.txtVizualizacao.Font = new System.Drawing.Font("News706 BT", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtVizualizacao.Location = new System.Drawing.Point(826, 104);
+            this.txtVizualizacao.Name = "txtVizualizacao";
+            this.txtVizualizacao.Size = new System.Drawing.Size(109, 30);
+            this.txtVizualizacao.TabIndex = 67;
+            this.txtVizualizacao.TextChanged += new System.EventHandler(this.txtVizualização_TextChanged);
             // 
             // label5
             // 
@@ -404,6 +404,20 @@
             // 
             this.cbPlataforma.Font = new System.Drawing.Font("News706 BT", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbPlataforma.FormattingEnabled = true;
+            this.cbPlataforma.Items.AddRange(new object[] {
+            "PC",
+            "XBOX",
+            "PS4",
+            "PS2",
+            "PS3",
+            "PS1",
+            "PSP",
+            "PSVITA",
+            "SWITCH ",
+            "3DS",
+            "2DS",
+            "3DS3D",
+            "ATARI"});
             this.cbPlataforma.Location = new System.Drawing.Point(363, 217);
             this.cbPlataforma.Name = "cbPlataforma";
             this.cbPlataforma.Size = new System.Drawing.Size(121, 30);
@@ -414,6 +428,10 @@
             // 
             this.cbCategoria.Font = new System.Drawing.Font("News706 BT", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbCategoria.FormattingEnabled = true;
+            this.cbCategoria.Items.AddRange(new object[] {
+            "GEMEPLAY",
+            "TUTORIAIS",
+            "REVIEW"});
             this.cbCategoria.Location = new System.Drawing.Point(363, 179);
             this.cbCategoria.Name = "cbCategoria";
             this.cbCategoria.Size = new System.Drawing.Size(121, 30);
@@ -434,7 +452,7 @@
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(75, 23);
             this.btnSalvar.TabIndex = 88;
-            this.btnSalvar.Text = "button1";
+            this.btnSalvar.Text = "Salvar";
             this.btnSalvar.UseVisualStyleBackColor = true;
             this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
             // 
@@ -444,7 +462,7 @@
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(75, 23);
             this.btnCancelar.TabIndex = 89;
-            this.btnCancelar.Text = "button2";
+            this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
@@ -468,7 +486,7 @@
             this.Controls.Add(this.label18);
             this.Controls.Add(this.txtInscritos);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.txtVizualização);
+            this.Controls.Add(this.txtVizualizacao);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.nudStrikes);
             this.Controls.Add(this.txtLikes);
@@ -533,7 +551,7 @@
         private System.Windows.Forms.TextBox txtLikes;
         private System.Windows.Forms.NumericUpDown nudStrikes;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.TextBox txtVizualização;
+        private System.Windows.Forms.TextBox txtVizualizacao;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txtInscritos;
         private System.Windows.Forms.ComboBox cbPlataforma;

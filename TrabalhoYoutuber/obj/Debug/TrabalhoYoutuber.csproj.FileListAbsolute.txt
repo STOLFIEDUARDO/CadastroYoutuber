@@ -10,3 +10,12 @@ C:\Users\104957\Documents\Visual Studio 2013\Projects\TrabalhoYoutuber\TrabalhoY
 C:\Users\104957\Documents\GitHub\CadastroYoutuber\TrabalhoYoutuber\bin\Debug\TrabalhoYoutuber.exe.config
 C:\Users\104957\Documents\GitHub\CadastroYoutuber\TrabalhoYoutuber\obj\Debug\TrabalhoYoutuber.exe
 C:\Users\104957\Documents\GitHub\CadastroYoutuber\TrabalhoYoutuber\obj\Debug\TrabalhoYoutuber.pdb
+C:\Users\104957\Documents\GitHub\CadastroYoutuber\TrabalhoYoutuber\obj\Debug\TrabalhoYoutuber.csprojResolveAssemblyReference.cache
+C:\Users\104957\Documents\GitHub\CadastroYoutuber\TrabalhoYoutuber\obj\Debug\TrabalhoYoutuber.CadastroYoutuber.resources
+C:\Users\104957\Documents\GitHub\CadastroYoutuber\TrabalhoYoutuber\obj\Debug\TrabalhoYoutuber.Inicial.resources
+C:\Users\104957\Documents\GitHub\CadastroYoutuber\TrabalhoYoutuber\obj\Debug\TrabalhoYoutuber.Properties.Resources.resources
+C:\Users\104957\Documents\GitHub\CadastroYoutuber\TrabalhoYoutuber\obj\Debug\TrabalhoYoutuber.csproj.GenerateResource.Cache
+C:\Users\104957\Documents\GitHub\CadastroYoutuber\TrabalhoYoutuber\bin\Debug\TrabalhoYoutuber.exe
+C:\Users\104957\Documents\GitHub\CadastroYoutuber\TrabalhoYoutuber\bin\Debug\TrabalhoYoutuber.pdb
+C:\Users\104957\Documents\GitHub\CadastroYoutuber\TrabalhoYoutuber\bin\Debug\Model.dll
+C:\Users\104957\Documents\GitHub\CadastroYoutuber\TrabalhoYoutuber\bin\Debug\Model.pdb

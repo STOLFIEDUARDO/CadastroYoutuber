@@ -100,20 +100,20 @@ using System.Threading.Tasks;
 
 
 
-
-
-    public void SetNomeCanal(string nomeCANAL)
+    internal void SetNomeCanal(string linhaSelecionada)
     {
-        if (nomeCANAL.Trim().Count() < 2)
+        if (linhaSelecionada.Trim().Count() < 2)
         {
             throw new Exception("NomeDoCanal deve conter mais de 2 letras");
         }
-        if (nomeCANAL.Trim().Count() > 120)
+        if (linhaSelecionada.Trim().Count() > 120)
         {
             throw new Exception("NomeDoCanal deve conter no maximo 120 letras");
         }
-        NomeCanal = nomeCANAL;
+        NomeCanal = linhaSelecionada;
     }
+
+    
     public string GetNomeCanal()
     {
         return NomeCanal;
@@ -213,79 +213,98 @@ using System.Threading.Tasks;
         return Nacionalidade;
     }
 
+    public void SetPatrocinador(bool patrocinador)
+    {
+        Patrocinador = patrocinador;
+    }
+    public bool GetPatrocinador()
+    {
+        return Patrocinador;
+    }
+
+    public void SetAnuncios(bool anuncios)
+    {
+        Anuncios = anuncios;
+    }
+    public bool GetAnuncios()
+    {
+        return Anuncios;
+    }
+
+    public void SetStreamer(bool streamer)
+    {
+       Streamer = streamer;
+    }
+    public bool GetStreamer()
+    {
+       return Streamer;
+    }
 
 
-       public void SetDescricao(string descricao)
+    public void SetDescricao(string descricao)
     {
         Descricao = descricao;
-    }
-       public string GetDescricao()
-       {
+    } 
+    public string GetDescricao()
+    {
            return Descricao;
-       }
+    }
 
 
 
-       public void SetLinkDoCanal(string linkDoCanal)
-       {
-           LinkDoCanal = linkDoCanal;
-       }
-       public string GetLinkDoCanal()
-       {
-           return LinkDoCanal;
-       }
+    public void SetLinkDoCanal(string linkDoCanal)
+    {
+       LinkDoCanal = linkDoCanal;
+    }
+    public string GetLinkDoCanal()
+    {
+       return LinkDoCanal;
+    }
 
 
 
 
-       public void SetCategoria(string categoria)
-       {
-           Categoria = categoria;
-       }
+    public void SetCategoria(string categoria)
+    {
+       Categoria = categoria;
+    }
        public string GetCategoria()
+    {
+       return Categoria;
+    }
+
+
+
+
+    
+
+
+
+
+    public void SetRenda(double renda)
+    {
+      if (renda < 0)
+      {
+         throw new Exception("Renda deve ser igual a 0 ou maior");
+      }
+         Renda = renda;
+      }
+    public double GetRenda()
+    {
+       return Renda;
+    }
+
+    public void SetQuantosStrikes(int quantosStrikes)
+    {
+       if (quantosStrikes < 0)
        {
-           return Categoria;
+          throw new Exception("Quantidade de strikes deve ser igual a 0 ou maior");
+
        }
-
-
-
-
-       public void SetPlataforma(string plataforma)
+       if (quantosStrikes > 3)
        {
-           Plataforma = plataforma;
+           throw new Exception("Quantidade de strikes deve ser menor ou igual a 3");
        }
-       public string GetCategoria()
-       {
-           return Plataforma;
-       }
-
-
-
-
-       public void SetRenda(double renda)
-       {
-           if (renda < 0)
-           {
-               throw new Exception("Renda deve ser igual a 0 ou maior");
-           }
-           Renda = renda;
-       }
-       public double GetRenda()
-       {
-           return Renda;
-       }
-
-       public void SetQuantosStrikes(int quantosStrikes)
-       {
-           if (quantosStrikes < 0)
-           {
-               throw new Exception("Quantidade de strikes deve ser igual a 0 ou maior");
-
-           }
-           if (quantosStrikes > 3)
-           {
-               throw new Exception("Quantidade de strikes deve ser menor ou igual a 3");
-           }
            QuantosStrikes = quantosStrikes;
 
        }
@@ -293,6 +312,16 @@ using System.Threading.Tasks;
        {
            return QuantosStrikes;
        }
+
+       public void SetPlataforma(string plataforma)
+       {
+           Plataforma = plataforma;
+       }
+       public string GetPlataforma()
+       {
+           return Plataforma;
+       }
+
 
 
 

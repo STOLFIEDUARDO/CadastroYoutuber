@@ -16,7 +16,7 @@ namespace TrabalhoYoutuber
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new CadastroYoutuber());
+            Application.Run(new Inicial());
         }
     }
 }

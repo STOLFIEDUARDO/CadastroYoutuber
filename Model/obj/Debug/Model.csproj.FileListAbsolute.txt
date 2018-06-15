@@ -3,3 +3,9 @@ C:\Users\104957\Documents\GitHub\CadastroYoutuber\Model\bin\Debug\Model.dll
 C:\Users\104957\Documents\GitHub\CadastroYoutuber\Model\bin\Debug\Model.pdb
 C:\Users\104957\Documents\GitHub\CadastroYoutuber\Model\obj\Debug\Model.dll
 C:\Users\104957\Documents\GitHub\CadastroYoutuber\Model\obj\Debug\Model.pdb
+C:\Users\User\Documents\GitHub\CadastroYoutuber\Model\bin\Debug\Model.dll
+C:\Users\User\Documents\GitHub\CadastroYoutuber\Model\bin\Debug\Model.pdb
+C:\Users\User\Documents\GitHub\CadastroYoutuber\Model\obj\Debug\Model.csprojAssemblyReference.cache
+C:\Users\User\Documents\GitHub\CadastroYoutuber\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
+C:\Users\User\Documents\GitHub\CadastroYoutuber\Model\obj\Debug\Model.dll
+C:\Users\User\Documents\GitHub\CadastroYoutuber\Model\obj\Debug\Model.pdb

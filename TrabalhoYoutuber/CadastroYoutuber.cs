@@ -12,7 +12,7 @@ namespace TrabalhoYoutuber
 {
     public partial class CadastroYoutuber : Form
     {
-        private string linhaSelecionada;
+        private int CodigoSelecionado = -1;
         public int posicao = -1;
         private Model salvar;
         public static string NOME_ARQUIVO = "CadastrosYoutuber.bin";
@@ -25,14 +25,14 @@ namespace TrabalhoYoutuber
         public CadastroYoutuber(string linhaSelecionada)
         {
             InitializeComponent();
-            this.linhaSelecionada = linhaSelecionada;
+            this.CodigoSelecionado = CodigoSelecionado;
             CadastroYoutuberRepository repositorio = new CadastroYoutuberRepository();
 
             int quantidade = 0;
             for (int i = 0; i < repositorio.ObterTeens().Count(); i++)
             {
                 Model youtubersTeen = repositorio.ObterTeens()[i];
-                if (youtubersTeen.GetNomeCanal() == linhaSelecionada)
+                if (youtubersTeen.GetCodigo() == CodigoSelecionado)
                 {
                     txtNome.Text = youtubersTeen.GetNome();
                     txtSobrenome.Text = youtubersTeen.GetSobrenome();
@@ -52,7 +52,6 @@ namespace TrabalhoYoutuber
                     nudStrikes.Value = youtubersTeen.GetQuantosStrikes();
                     cbPlataforma.Text = youtubersTeen.GetPlataforma();
                     cbCategoria.Text = youtubersTeen.GetCategoria();
-                    this.linhaSelecionada = linhaSelecionada;
                     return;
                 }
                 quantidade++;
@@ -205,8 +204,20 @@ namespace TrabalhoYoutuber
                 txtRenda.Focus();
                 return;
             }
+            try
+            {
+                salvar.SetCodigo(Convert.ToInt32(txtCodigo.Text));
+            }
+            catch (Exception ex)
+            {
 
-             try
+                MessageBox.Show("Por favor preencha o campo codigo");
+                txtCodigo.Focus();
+                return;
+            }
+
+
+            try
             {
                 salvar.SetLinkDoCanal(txtLink.Text);
             }
@@ -268,15 +279,15 @@ namespace TrabalhoYoutuber
             }
 
             CadastroYoutuberRepository tudo = new CadastroYoutuberRepository();
-            if (posicao == -1)
+            if (CodigoSelecionado == -1)
             {
                 tudo.AdicionarYoutuber(salvar);
                 MessageBox.Show("Youtuber cadastrado com sucesso");
             }
             else
             {
-                tudo.SetNomeCanal(linhaSelecionada);
-                tudo.EditarYoutuber(salvar, linhaSelecionada);
+                tudo.SetCodigo(CodigoSelecionado);
+                tudo.EditarYoutuber(salvar, CodigoSelecionado);
                 MessageBox.Show("Youtuber alterado com sucesso");
             }
 

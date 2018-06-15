@@ -32,6 +32,7 @@
             this.btnNovo = new System.Windows.Forms.Button();
             this.btnApagar = new System.Windows.Forms.Button();
             this.btnEditar = new System.Windows.Forms.Button();
+            this.CodigoColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NomeDaPessoaColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.StrikesColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.VisualizacoesColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -46,6 +47,7 @@
             this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.CodigoColumn1,
             this.NomeDaPessoaColumn,
             this.StrikesColumn,
             this.VisualizacoesColumn,
@@ -59,7 +61,7 @@
             // 
             // btnNovo
             // 
-            this.btnNovo.Font = new System.Drawing.Font("News706 BT", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNovo.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNovo.Location = new System.Drawing.Point(58, 71);
             this.btnNovo.Name = "btnNovo";
             this.btnNovo.Size = new System.Drawing.Size(128, 55);
@@ -70,7 +72,7 @@
             // 
             // btnApagar
             // 
-            this.btnApagar.Font = new System.Drawing.Font("News706 BT", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnApagar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnApagar.Location = new System.Drawing.Point(235, 71);
             this.btnApagar.Name = "btnApagar";
             this.btnApagar.Size = new System.Drawing.Size(128, 55);
@@ -81,7 +83,7 @@
             // 
             // btnEditar
             // 
-            this.btnEditar.Font = new System.Drawing.Font("News706 BT", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEditar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEditar.Location = new System.Drawing.Point(405, 71);
             this.btnEditar.Name = "btnEditar";
             this.btnEditar.Size = new System.Drawing.Size(128, 55);
@@ -89,6 +91,12 @@
             this.btnEditar.Text = "Editar";
             this.btnEditar.UseVisualStyleBackColor = true;
             this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
+            // 
+            // CodigoColumn1
+            // 
+            this.CodigoColumn1.HeaderText = "Codigo";
+            this.CodigoColumn1.Name = "CodigoColumn1";
+            this.CodigoColumn1.ReadOnly = true;
             // 
             // NomeDaPessoaColumn
             // 
@@ -143,6 +151,7 @@
         private System.Windows.Forms.Button btnNovo;
         private System.Windows.Forms.Button btnApagar;
         private System.Windows.Forms.Button btnEditar;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CodigoColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn NomeDaPessoaColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn StrikesColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn VisualizacoesColumn;

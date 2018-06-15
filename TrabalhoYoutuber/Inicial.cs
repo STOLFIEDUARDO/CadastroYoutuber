@@ -54,13 +54,13 @@ namespace TrabalhoYoutuber
                 return;
             }
 
-            string nome = dataGridView1.Rows[dataGridView1.CurrentRow.Index].Cells[0].Value.ToString();
+            int codigo = Convert.ToInt32(dataGridView1.Rows[dataGridView1.CurrentRow.Index].Cells[0].Value.ToString());
             dataGridView1.Rows.RemoveAt(dataGridView1.CurrentRow.Index);
-            CadastroYoutuberRepository youtube = new CadastroYoutuberRepository();
-            youtube.Apagar(nome);
-            MessageBox.Show(nome + " apagado com sucesso.");
-        
-            
+            CadastroYoutuberRepository repositorio = new CadastroYoutuberRepository();
+            repositorio.Apagar(codigo);
+            MessageBox.Show(codigo + " apagado com sucesso.");
+
+
         }
 
         
@@ -76,7 +76,7 @@ namespace TrabalhoYoutuber
             {
                 dataGridView1.Rows.Add(new Object[]
                 {
-                
+                    dgv.GetCodigo(),
                     dgv.GetNome(),
                     dgv.GetQuantosStrikes(),
                     dgv.GetQuantidadeVisualizacoes(),

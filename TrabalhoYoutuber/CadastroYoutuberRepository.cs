@@ -21,6 +21,15 @@ namespace TrabalhoYoutuber
                 Stream stream = File.OpenRead(CadastroYoutuber.NOME_ARQUIVO);
                 youtubersteen = ((CadastroYoutuberRepository)binaryReader.Deserialize(stream)).ObterTeens();
                 stream.Close();
+                int maiorCodigo = int.MinValue;
+                foreach (Model salvar in youtubersteen)
+                {
+                    maiorCodigo = salvar.GetCodigo() > maiorCodigo ? salvar.GetCodigo() : maiorCodigo;
+                }
+                if (Model.UltimoCodigo == 0)
+                {
+                    Model.UltimoCodigo = maiorCodigo;
+                }
             }
         }
         private void EscreverNoArquivoDoCadastroYoutubers()
@@ -32,17 +41,18 @@ namespace TrabalhoYoutuber
         }
         public void AdicionarYoutuber(Model youtubers)
         {
+            youtubers.SetCodigo(++Model.UltimoCodigo);
             youtubersteen.Add(youtubers);
 
             EscreverNoArquivoDoCadastroYoutubers();
         }
 
-        internal void EditarYoutuber(Model youtubers, string posicao)
+        internal void EditarYoutuber(Model youtubers, int posicao)
         {
             for (int i = 0; i < youtubersteen.Count(); i++)
             {
                 Model youtuberTeenAux = youtubersteen[i];
-                if (youtuberTeenAux.GetNomeCanal() == posicao)
+                if (youtuberTeenAux.GetCodigo() == posicao)
                 {
                     youtubersteen[i] = youtubers;
                     EscreverNoArquivoDoCadastroYoutubers();
@@ -53,19 +63,7 @@ namespace TrabalhoYoutuber
 
         }
 
-        internal void ApagarPersonagem(string nome)
-        {
-            foreach (Model youtubersteens in youtubersteen)
-            {
-                if (youtubersteens.GetNomeCanal() == nome)
-                {
-                    youtubersteen.Remove(youtubersteens);
-                    EscreverNoArquivoDoCadastroYoutubers();
-                    return;
-                }
-            }
-        }
-
+       
         public List<Model> ObterTeens()
         {
             return youtubersteen;
@@ -73,11 +71,11 @@ namespace TrabalhoYoutuber
 
 
 
-        internal void Apagar(string nome)
+        internal void Apagar(int codigo)
         {
             foreach (Model apagar in youtubersteen)
             {
-                if (apagar.GetNomeCanal() == nome)
+                if (apagar.GetCodigo() == codigo)
                 {
                     youtubersteen.Remove(apagar);
                     EscreverNoArquivoDoCadastroYoutubers();
@@ -85,18 +83,17 @@ namespace TrabalhoYoutuber
                 }
             }
         }
-
-        internal void SetNomeCanal(string linhaSelecionada)
+        private int Codigo;
+        public int GetCodigo()
         {
-            if (linhaSelecionada.Trim().Count() < 2)
-            {
-                throw new Exception("NomeDoCanal deve conter mais de 2 letras");
-            }
-            if (linhaSelecionada.Trim().Count() > 120)
-            {
-                throw new Exception("NomeDoCanal deve conter no maximo 120 letras");
-            }
-             
+            return Codigo;
         }
+        public void SetCodigo(int codigo)
+        {
+            this.Codigo = codigo;
+        }
+
+
+
     }
 }

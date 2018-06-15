@@ -19,3 +19,17 @@ C:\Users\104957\Documents\GitHub\CadastroYoutuber\TrabalhoYoutuber\bin\Debug\Tra
 C:\Users\104957\Documents\GitHub\CadastroYoutuber\TrabalhoYoutuber\bin\Debug\TrabalhoYoutuber.pdb
 C:\Users\104957\Documents\GitHub\CadastroYoutuber\TrabalhoYoutuber\bin\Debug\Model.dll
 C:\Users\104957\Documents\GitHub\CadastroYoutuber\TrabalhoYoutuber\bin\Debug\Model.pdb
+C:\Users\User\Documents\GitHub\CadastroYoutuber\TrabalhoYoutuber\obj\Debug\TrabalhoYoutuber.csprojAssemblyReference.cache
+C:\Users\User\Documents\GitHub\CadastroYoutuber\TrabalhoYoutuber\obj\Debug\TrabalhoYoutuber.CadastroYoutuber.resources
+C:\Users\User\Documents\GitHub\CadastroYoutuber\TrabalhoYoutuber\obj\Debug\TrabalhoYoutuber.Inicial.resources
+C:\Users\User\Documents\GitHub\CadastroYoutuber\TrabalhoYoutuber\obj\Debug\TrabalhoYoutuber.Properties.Resources.resources
+C:\Users\User\Documents\GitHub\CadastroYoutuber\TrabalhoYoutuber\obj\Debug\TrabalhoYoutuber.csproj.GenerateResource.cache
+C:\Users\User\Documents\GitHub\CadastroYoutuber\TrabalhoYoutuber\obj\Debug\TrabalhoYoutuber.csproj.CoreCompileInputs.cache
+C:\Users\User\Documents\GitHub\CadastroYoutuber\TrabalhoYoutuber\obj\Debug\TrabalhoYoutuber.exe
+C:\Users\User\Documents\GitHub\CadastroYoutuber\TrabalhoYoutuber\obj\Debug\TrabalhoYoutuber.pdb
+C:\Users\User\Documents\GitHub\CadastroYoutuber\TrabalhoYoutuber\bin\Debug\TrabalhoYoutuber.exe.config
+C:\Users\User\Documents\GitHub\CadastroYoutuber\TrabalhoYoutuber\bin\Debug\TrabalhoYoutuber.exe
+C:\Users\User\Documents\GitHub\CadastroYoutuber\TrabalhoYoutuber\bin\Debug\TrabalhoYoutuber.pdb
+C:\Users\User\Documents\GitHub\CadastroYoutuber\TrabalhoYoutuber\bin\Debug\Model.dll
+C:\Users\User\Documents\GitHub\CadastroYoutuber\TrabalhoYoutuber\bin\Debug\Model.pdb
+C:\Users\User\Documents\GitHub\CadastroYoutuber\TrabalhoYoutuber\obj\Debug\TrabalhoYoutuber.csproj.CopyComplete

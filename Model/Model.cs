@@ -7,7 +7,7 @@ using System.Threading.Tasks;
    [Serializable]
    public class Model
    {
-    private static int UltimoCodigo;
+    public static int UltimoCodigo;
     private int Codigo;
     private string Nome;
     private string Sobrenome;
@@ -35,9 +35,14 @@ using System.Threading.Tasks;
         Codigo = ++UltimoCodigo;
     }
 
+  
     public int GetCodigo()
     {
         return Codigo;
+    }
+    public void SetCodigo(int codigo)
+    {
+        this.Codigo = codigo;
     }
 
     public void SetNome(string nome)
